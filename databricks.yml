@@ -18,7 +18,8 @@ variables:
     description: The catalog to use
   schema:
     description: The schema to use
-
+  group-name:
+    description: 설명
 targets:
   dev:
     # The default target uses 'mode: development' to create a development copy.
@@ -32,6 +33,7 @@ targets:
     variables:
       catalog: workspace
       schema: ${workspace.current_user.short_name}
+      group-name: data_engineer
     git:
       origin_url: https://github.com/santol5946/databricks_free_demo.git
       branch: main
@@ -44,6 +46,7 @@ targets:
     variables:
       catalog: workspace
       schema: prod
+      group-name: data-engineer
     permissions:
       - service_principal_name: 21be6765-f82d-4cfa-b203-8c3216e53e57
         level: CAN_MANAGE

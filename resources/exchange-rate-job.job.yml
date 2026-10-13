@@ -16,5 +16,5 @@ resources:
       queue:
         enabled: true
       run_as:
-        group_name: data_engineer
+        group_name: ${var.group_name}
       performance_target: PERFORMANCE_OPTIMIZED
