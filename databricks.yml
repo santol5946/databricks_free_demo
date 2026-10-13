@@ -40,15 +40,15 @@ targets:
   prod:
     mode: production
     workspace:
-      host: https://dbc-440f1d22-290f.cloud.databricks.com/
+      host: https://dbc-e94c9eea-8073.cloud.databricks.com/
       # We explicitly deploy to /Workspace/Users/68012c78-2cf0-41de-94e2-21b6ed0cbe6e to make sure we only have a single copy.
-      root_path: /Workspace/Users/21be6765-f82d-4cfa-b203-8c3216e53e57/.bundle/databricks_free_demo_grand/${bundle.target}
+      root_path: /Workspace/Users/d1185284-4f87-4c40-9e68-ddb31350c87e/.bundle/databricks_free_demo_grand/${bundle.target}
     variables:
       catalog: workspace
       schema: prod
       group_name: data-engineer
     permissions:
-      - service_principal_name: 21be6765-f82d-4cfa-b203-8c3216e53e57
+      - service_principal_name: d1185284-4f87-4c40-9e68-ddb31350c87e
         level: CAN_MANAGE
     git:
       origin_url: https://github.com/santol5946/databricks_free_demo.git
