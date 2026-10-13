@@ -38,14 +38,14 @@ targets:
   prod:
     mode: production
     workspace:
-      host: https://dbc-1345f388-285a.cloud.databricks.com
+      host: https://dbc-440f1d22-290f.cloud.databricks.com/
       # We explicitly deploy to /Workspace/Users/68012c78-2cf0-41de-94e2-21b6ed0cbe6e to make sure we only have a single copy.
-      root_path: /Workspace/Users/68012c78-2cf0-41de-94e2-21b6ed0cbe6e/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Workspace/Users/21be6765-f82d-4cfa-b203-8c3216e53e57/.bundle/${bundle.name}/${bundle.target}
     variables:
       catalog: workspace
       schema: prod
     permissions:
-      - service_principal_name: 68012c78-2cf0-41de-94e2-21b6ed0cbe6e
+      - service_principal_name: 21be6765-f82d-4cfa-b203-8c3216e53e57
         level: CAN_MANAGE
     git:
       origin_url: https://github.com/santol5946/databricks_free_demo.git
