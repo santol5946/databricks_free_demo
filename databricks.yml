@@ -32,6 +32,9 @@ targets:
     variables:
       catalog: workspace
       schema: ${workspace.current_user.short_name}
+    git:
+      origin_url: https://github.com/santol5946/databricks_free_demo.git
+      branch: main
   prod:
     mode: production
     workspace:
@@ -44,3 +47,6 @@ targets:
     permissions:
       - service_principal_name: 68012c78-2cf0-41de-94e2-21b6ed0cbe6e
         level: CAN_MANAGE
+    git:
+      origin_url: https://github.com/santol5946/databricks_free_demo.git
+      branch: main
