@@ -9,7 +9,7 @@ resources:
       tasks:
         - task_key: collect_data
           notebook_task:
-            notebook_path: src/exchange-rate-job/homework_261012.ipynb
+            notebook_path: src/exchange-rate-job/homework_261012
             base_parameters:
               SEARCHDATE: "20261010"
             source: GIT
